@@ -26,11 +26,17 @@
     flex-wrap: wrap;
 }
 
-.row-reverse{
+.f-row-reverse{
     flex-direction: row-reverse;
 }
 
+.f-col{
+    flex-direction: column;
+}
 
+.justify-between{
+    justify-content: space-between;
+}
 /* FINE CLASSI*/
 
 main{
@@ -40,17 +46,17 @@ main{
 
 /* INIZIO CALCOLATRICE */
 .calculator{
-    background-color: lightgray;
+    background: linear-gradient(0.25turn, #9d9d9d, #ebeaea);
     width: 320px;
-    height: 500px;
     border-radius: 10px;
     overflow: hidden;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .model{
     height: 100px;
-    background-color: gray;
-    font-family: sans-serif; /* TODO cercare font simile al mokup */
 }
 
 .display{
@@ -65,35 +71,57 @@ main{
 }
 
 /* INIZIO BUTTONS */
-
+.number, .click{
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
+    text-align: center;
+}
 /* INIZIO NUMPAD */
 
 .numpad{
-    width: 220px;
-    height: 330px;
-    background-color: red;
+    width: 230px;
     padding: 10px;
 }
 .number{
-    width: calc(170px/3);
-    height: calc(170px/3);
+    width: 60px;
     margin: 5px;
     background-color: aqua;
-    text-align: center;
-    line-height: calc(170px/3);
     font-size: 30px;
+    background-color: #9d9d9d;
+    line-height: 60px;
 }
 
 .number.zero{
-    width: calc(370px/3);
+    width: 130px;
     order: 1;
 }
 /* FINE NUMPAD*/
 
 .commands{
-    width: 100px;
-    height: 330px;
-    background-color: blue;
+    width: 90px;
+    padding: 15px 0px 5px 0px;
+}
+
+.click{
+    width: 80%;
+    height: 20%;
+    margin-bottom: 10px;
+    background-color: rgb(3, 181, 175);
+    line-height: calc(230px/5);
+    font-size: 30px;
+}
+
+.white-txt{
+    color: #fff;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.light-blue {
+    background-color: lightblue;
 }
 
 /* FINE BUTTONS */
