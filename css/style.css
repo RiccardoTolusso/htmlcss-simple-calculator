@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+}
+
+/* INIZIO CALCOLATRICE */
+.calculator{
+    background-color: lightgray;
+    width: 300px;
+    height: 450px;
+}
+
+/* FINE CALCOLATRICE */
