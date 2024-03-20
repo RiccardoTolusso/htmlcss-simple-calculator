@@ -14,6 +14,10 @@
     justify-content: center;
 }
 
+.justify-end{
+    justify-content: end;
+}
+
 .align-center{
     align-items: center;
 }
@@ -23,7 +27,6 @@
 main{
     width: 100vw;
     height: 100vh;
-    background-color: yellow;
 }
 
 /* INIZIO CALCOLATRICE */
@@ -31,19 +34,31 @@ main{
     background-color: lightgray;
     width: 320px;
     height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .model{
     height: 100px;
     background-color: gray;
+    font-family: sans-serif; /* TODO cercare font simile al mokup */
 }
 
 .display{
     height: 70px;
+    font-size: 40px;
     background-color: black;
+    color: greenyellow;
+    font-family: 'Seven Segment', sans-serif;
+}
+.display > span{
+    margin: 0px 20px;
 }
 
 /* INIZIO BUTTONS */
+.buttons *{
+    font-family: 'Seven Segment', sans-serif;
+}
 
 .numpad{
     width: 220px;
