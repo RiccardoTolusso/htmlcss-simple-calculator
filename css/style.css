@@ -124,5 +124,23 @@ main{
     background-color: lightblue;
 }
 
+/* extra for fun */
+.model:hover{
+    cursor: default;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.number:hover, .click:hover{
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.number:active, .click:active{
+    border: 0px;
+}
+/* end extra for fun */
+
 /* FINE BUTTONS */
 /* FINE CALCOLATRICE */
