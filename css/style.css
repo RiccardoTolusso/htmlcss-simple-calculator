@@ -22,6 +22,15 @@
     align-items: center;
 }
 
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+
 /* FINE CLASSI*/
 
 main{
@@ -56,20 +65,36 @@ main{
 }
 
 /* INIZIO BUTTONS */
-.buttons *{
-    font-family: 'Seven Segment', sans-serif;
-}
+
+/* INIZIO NUMPAD */
 
 .numpad{
     width: 220px;
     height: 330px;
     background-color: red;
+    padding: 10px;
 }
+.number{
+    width: calc(170px/3);
+    height: calc(170px/3);
+    margin: 5px;
+    background-color: aqua;
+    text-align: center;
+    line-height: calc(170px/3);
+    font-size: 30px;
+}
+
+.number.zero{
+    width: calc(370px/3);
+    order: 1;
+}
+/* FINE NUMPAD*/
 
 .commands{
     width: 100px;
     height: 330px;
     background-color: blue;
 }
+
 /* FINE BUTTONS */
 /* FINE CALCOLATRICE */
